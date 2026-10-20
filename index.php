@@ -15,3 +15,7 @@ define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
 require __DIR__ . '/wp-blog-header.php';
+
+// Log that index.php has been loaded
+// disimpan di wp-content/debug.log
+error_log( 'index.php loaded' );
